@@ -1,0 +1,14 @@
+:root {
+  --main-bg-color: #212529;
+  --text-color: #f8f9fa;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+}
+
+.toppar {
+  display: flex;
+  justify-content: space-between;
+}
