@@ -4,21 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Joan Serrano</title>
 </head>
 <body>
   <header>
     <div class="topbar">
-      <div class="logo">
-      </div>
-      <div class="menu"></div>      
+      <a href="#">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" />
+          <div class="name">
+            <span>JOAN</span>
+            <span>SERRANO</span>
+          </div>
+        </div>
+      </a>
+      <div class="menu-dropdown">
+        <object id="menu" data="./assets/menu.svg" type="image/svg+xml" class="menu"></object>
+        <object id="close" data="./assets/close.svg" type="image/svg+xml" class="close"></object>
+      </div>      
     </div>
   </header>
   <main>
     <div class="introduce">
-      <canvas id="particles-container" class="particles"></canvas>
     </div>
     <div class="projects"></div>
     <div class="technologies"></div>

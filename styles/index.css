@@ -2,14 +2,47 @@
   --main-bg-color: #2a2223;
   --text-color: #f8f9fa;
 }
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
 
 body {
   color: var(--text-color);
   background-color: var(--main-bg-color);
   overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
-.toppar {
+.topbar {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo:hover > .name {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.logo img {
+  margin-right: .4rem;
+  width: 3rem;
+} 
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 1.2rem;
+}
+
+.close {
+  display: none;
 }
