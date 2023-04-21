@@ -15,6 +15,7 @@ body {
 }
 
 .topbar {
+  position: relative;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -45,4 +46,34 @@ body {
 
 .close {
   display: none;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  width: 25%;
+  display: none;
+  justify-content: space-around;
+}
+
+.introduce {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.projects {
+  padding: 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }

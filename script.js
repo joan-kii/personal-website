@@ -1,16 +1,17 @@
 // Menu dropdown handler
 const menuButton = document.getElementById('menu');
 const closeButton = document.getElementById('close');
+const menuDropdown = document.getElementById('dropdown');
 
-
-// segui aquí (no funciona addEventListener)
 menuButton.addEventListener('click', () => {
-  console.log('lol')
   menuButton.style.display = 'none';
   closeButton.style.display = 'block';
+  menuDropdown.style.display = 'flex';
 })
 
 closeButton.addEventListener('click', () => {
   closeButton.style.display = 'none';
   menuButton.style.display = 'block';
+  menuDropdown.style.display = 'none';
+
 })

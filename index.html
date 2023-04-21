@@ -24,22 +24,50 @@
           </div>
         </div>
       </a>
-      <div class="menu-dropdown">
-        <object id="menu" data="./assets/menu.svg" type="image/svg+xml" class="menu"></object>
-        <object id="close" data="./assets/close.svg" type="image/svg+xml" class="close"></object>
-      </div>      
+      <div>
+        <svg id="menu" class="menu" xmlns="http://www.w3.org/2000/svg" fill="#f8f9fa" height="48" viewBox="0 96 960 960" width="48" style="cursor: pointer"><path d="M107.609 834.913v-83.174h745.217v83.174H107.609Zm0-217.261v-83.174h745.217v83.174H107.609Zm0-217.391v-83.74h745.217v83.74H107.609Z"/></svg>
+        <svg id="close" class="close" xmlns="http://www.w3.org/2000/svg" fill="#f8f9fa" height="48" viewBox="0 96 960 960" width="48" style="cursor: pointer"><path d="m248.13 866.087-57.782-58.217L422.217 576 190.348 344.261l57.782-58.783 232.305 231.739L711.87 285.478l57.782 58.783L538.783 576l230.869 231.87-57.782 58.217-231.435-231.739L248.13 866.087Z"/></svg>
+      </div> 
+      <div id="dropdown" class="menu-dropdown">
+        <a href="#projects">PROJECTS</a>
+        <a href="#technologies">TECHNOLOGIES</a>
+        <a href="#contact">CONTACT</a>
+      </div>     
     </div>
   </header>
   <main>
-    <div class="introduce">
-    </div>
-    <div class="projects"></div>
-    <div class="technologies"></div>
+    <section class="introduce">
+      <h1 class="intro">Hi! I'm Joan Serrano,</br>an aspiring software developer.</h1>
+      <picture>
+        <img srcset="./assets/me.jpg" alt="photo of Joan Serrano" class="me">
+      </picture>
+    </section>
+    <section class="projects">
+      <div class="card">
+        <picture>
+          <img src="" alt="">
+        </picture>
+        <p></p>
+        <div class="buttons">
+          <button>Take a look</button>
+          <button>Source code</button>
+        </div>
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </section>
+    <section class="technologies"></section>
   </main>
   <footer>
-    <div class="contact"></div>
+    <section class="contact"></section>
     <div class="map"></div>
   </footer>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
