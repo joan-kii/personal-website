@@ -24,6 +24,11 @@ h2, h3 {
   text-align: center;
 }
 
+svg {
+  height: 48px;
+  width: 48px;
+}
+
 .topbar {
   position: relative;
   padding: 2rem;
@@ -49,9 +54,13 @@ h2, h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.2rem;
   opacity: 0;
   transition: opacity 1s;
-  font-size: 1.2rem;
+}
+
+.toggle-menu {
+  display: contents;
 }
 
 .close {
