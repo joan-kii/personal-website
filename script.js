@@ -1,3 +1,8 @@
+// Get year for copyright
+const copyright = document.getElementById('copyright');
+const year = new Date().getFullYear();
+copyright.textContent = `Copyright © ${year}`;
+
 // Menu dropdown handler
 const menuButton = document.getElementById('menu');
 const closeButton = document.getElementById('close');
@@ -13,5 +18,4 @@ closeButton.addEventListener('click', () => {
   closeButton.style.display = 'none';
   menuButton.style.display = 'block';
   menuDropdown.style.display = 'none';
-
 })
