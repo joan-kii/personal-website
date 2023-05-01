@@ -1,7 +1,8 @@
 // Get year for copyright
 const copyright = document.getElementById('copyright');
 const year = new Date().getFullYear();
-copyright.textContent = `Copyright © ${year}`;
+copyright.setAttribute('style', 'white-space: pre');
+copyright.textContent = `Made by Joan Serrano\nCopyright © ${year}`;
 
 // Menu dropdown handler
 const menuButton = document.getElementById('menu');
