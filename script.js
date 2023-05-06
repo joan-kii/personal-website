@@ -21,25 +21,35 @@ closeButton.addEventListener('click', () => {
   menuDropdown.style.display = 'none';
 })
 
-// Emailjs handler
-function emailjs() {
-  emailjs.init('6k3-Gl0ANeJNcqsaT');
-};
 
-window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    console.log('submitted');
-    event.preventDefault();
-    // generate a five digit number for the contact_number variable
-    this.contact_number.value = Math.random() * 100000 | 0;
-    // these IDs from the previous steps
-    emailjs.sendForm('contact_service', 'contact_form', this)
-      .then(function() {
-        console.log('SUCCESS!');
-      }, function(error) {
-        console.log('FAILED...', error);
-      });
-  });
-}
+// Copy email to clipboard
+const tel = document.getElementById('copy-tel');
+const email = document.getElementById('copy-email');
+const telTooltip = document.getElementById('tel-tooltip');
+const emailTooltip = document.getElementById('email-tooltip');
 
-emailjs();
+tel.addEventListener('click', async () => {
+  try {
+    telTooltip.textContent = 'Copied!';
+    navigator.clipboard.writeText('+34663014045');
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+tel.addEventListener('mouseout', () => {
+  telTooltip.textContent = 'Copy to clipboard';
+})
+
+email.addEventListener('click', async () => {
+  try {
+    emailTooltip.textContent = 'Copied!';
+    navigator.clipboard.writeText('joan.sb@hotmail.com');
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+email.addEventListener('mouseout', () => {
+  emailTooltip.textContent = 'Copy to clipboard';
+})
