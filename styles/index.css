@@ -1,7 +1,8 @@
 :root {
-  --main-bg-color: #121212;
-  --text-color: #f8f9fa;
-  --link-color: #a7a2a9;
+  --main-bg-color: #fdfffa;
+  --text-color: #00274f;
+  --link-color: #0085c5;
+  --secondary-color: #fa4947;
   scroll-behavior: smooth;
 }
 
@@ -78,21 +79,6 @@ svg {
   width: 48px;
 }
 
-label {
-  margin-bottom: .3rem;
-}
-
-input, textarea {
-  margin-bottom: 1rem;
-  padding: .4rem;
-  border: 3px solid var(--main-bg-color);
-}
-
-input:focus, textarea:focus {
-  outline: none;
-  border: 3px solid transparent;
-}
-
 footer {
   text-align: center;
 }
@@ -101,7 +87,7 @@ footer {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(18 18 18 / .5);
+  background-color: rgb(71 55 82 / .8);
   backdrop-filter: blur(10px);
 }
 
@@ -148,7 +134,9 @@ footer {
 .introduce {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .type, .photo {
@@ -330,8 +318,8 @@ footer {
 .tel-tooltip, .email-tooltip {
   visibility: hidden;
   position: absolute;
-  left: 2rem;
-  width: 6rem;
+  left: 2.5rem;
+  width: 4.5rem;
   z-index: 1;
   padding: .3rem;
   align-self: center;

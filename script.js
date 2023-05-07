@@ -38,7 +38,7 @@ tel.addEventListener('click', async () => {
 });
 
 tel.addEventListener('mouseout', () => {
-  telTooltip.textContent = 'Copy to clipboard';
+  telTooltip.textContent = 'Copy';
 })
 
 email.addEventListener('click', async () => {
@@ -51,5 +51,5 @@ email.addEventListener('click', async () => {
 });
 
 email.addEventListener('mouseout', () => {
-  emailTooltip.textContent = 'Copy to clipboard';
+  emailTooltip.textContent = 'Copy';
 })
