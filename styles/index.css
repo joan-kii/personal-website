@@ -49,6 +49,14 @@ a:hover::after {
   transform-origin: bottom left;
 }
 
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.8rem;
+  color: var(--bg-color);
+}
+
 .button, button {
   padding: .5rem;
   border: 2px solid var(--text-color);
@@ -65,14 +73,14 @@ a:hover::after {
   border: 2px solid var(--bg-color);
 }
 
+section, h2, h3 {
+  scroll-margin-top: 7rem;
+}
+
 h2, h3 {
-  margin: 2rem 0;
-  padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
   color: var(--bg-color);
-  background-color: var(--text-color);
-  scroll-margin-top: 7rem;
 }
 
 svg {
@@ -203,32 +211,31 @@ footer {
 
 .photo > picture {
   opacity: 0;
-  animation: fade-in-left ease 2s forwards;
+  animation: fade-in ease 2s forwards;
   z-index: -1;
 }
 
-@keyframes fade-in-left {
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateX(8rem);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
 .about {
-  margin: 4rem auto;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  height: 30rem;
+  padding: 2rem;
+  background-color: var(--text-color);
 }
 
-.about a {
+.about-text {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.about-text a {
   color: var(--link-color);
 }
 
@@ -238,12 +245,19 @@ footer {
 }
 
 .projects {
-  margin: 5rem auto;
+  position: relative;
+  top: -20rem;
   padding: 5rem;
+  z-index: 1;
+}
+
+.projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;;
+  border-radius: 1rem;
+  background-color: var(--bg-color);
 }
 
 .project-card {
@@ -251,7 +265,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid var(--text-color);
 }
 
 .project-card > p {

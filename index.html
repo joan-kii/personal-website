@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/index.css">
@@ -49,87 +49,92 @@
         <h1 class="intro-2">an aspiring software developer.</h1>
       </div>
     </section>
-    <h2 id="about">About me</h2>
     <section class="about">
-      <p>
-        I'm an industrial electrical technician who's recently delved into the world of software development. While my background may be in a different field, I've found a passion for programming and have been dedicated to learning as much as I can in my free time.
-      </p>
-      <p>  
-        Most of my focus has been on web development, and I've been working in dynamic and engaging web applications following the course of <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> on the JavaScript path.
-      </p> 
-      <p>
-        Along the way, I've picked up other programming languages such as Python and Rust, which have given me a broader understanding of computer science and programming concepts.</br>
-        In this sense, I've done the Harvard courses <a href="https://cs50.harvard.edu/x/2023/" target="_blank">CS50x</a>, <a href="https://cs50.harvard.edu/python/2022/" target="_blank">CS50p</a> and <a href="https://cs50.harvard.edu/ai/2020/" target="_blank">CS50ai</a> and I've written some code following along some books about Python and Rust.
-      </p>
-      <p>  
-        As much as I've enjoyed my work as an industrial electrical technician, I'm excited about the possibilities that lie ahead and eager to continue learning and growing as a developer.
-      </p>
+      <h2 id="about">About me</h2>
+      <div class="about-text">
+        <p>
+          I'm an industrial electrical technician who's recently delved into the world of software development. While my background may be in a different field, I've found a passion for programming and have been dedicated to learning as much as I can in my free time.
+        </p> 
+        <p>  
+          I'm excited about the possibilities that lie ahead and eager to continue learning and growing as a developer.
+        </p>
+      </div>
     </section>
-    <h2 id="projects">Things I've built during my learning journey</h2>
-    <section class="projects">
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A fake social network as an exercise. Built with Nodejs, Express, React amd MongoDB.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://joan-kii.github.io/antro-frontend/#/access" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/antro-frontend" target="_blank">Source code</a>
+    <section id="projects" class="projects">
+      <div class="projects-grid">
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A fake social network as an exercise. Built with Nodejs, Express, React amd MongoDB.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://joan-kii.github.io/antro-frontend/#/access" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/antro-frontend" target="_blank">Source code</a>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A Chrome extension to find the external links in a web page.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://www.youtube.com/watch?v=f4VQJMfVPt0" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/prelink-chrome-extension" target="_blank">Source code</a>
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A Chrome extension to find the external links in a web page.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://www.youtube.com/watch?v=f4VQJMfVPt0" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/prelink-chrome-extension" target="_blank">Source code</a>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A fake social network for bird lovers. Created with React, Firebase and MaterialUI.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://joan-kii.github.io/birdity/#/" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/birdity" target="_blank">Source code</a>
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A fake social network for bird lovers. Created with React, Firebase and MaterialUI.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://joan-kii.github.io/birdity/#/" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/birdity" target="_blank">Source code</a>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A fake e-commerce. Built with React, Bootstrap and Styled Components.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://joan-kii.github.io/shopping-cart/" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/shopping-cart" target="_blank">Source code</a>
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A fake e-commerce. Built with React, Bootstrap and Styled Components.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://joan-kii.github.io/shopping-cart/" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/shopping-cart" target="_blank">Source code</a>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A web app for learning the notes on the guitar. Created with React, MaterialUI and Firebase.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://joan-kii.github.io/finding-guitar-notes/" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/finding-guitar-notes" target="_blank">Source code</a>
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A web app for learning the notes on the guitar. Created with React, MaterialUI and Firebase.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://joan-kii.github.io/finding-guitar-notes/" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/finding-guitar-notes" target="_blank">Source code</a>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <picture>
-          <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
-        </picture>
-        <p>A desktop app for keep track of a fever process. Built with Python and Qt.</p>
-        <div class="card-buttons">
-          <a class="button" href="https://www.youtube.com/watch?v=UdgvT-XeDCc" target="_blank">Take a look</a>
-          <a class="button" href="https://github.com/joan-kii/fever-tracker-gui" target="_blank">Source code</a>
+        <div class="project-card">
+          <picture>
+            <img srcset="./assets/ss_antro_cr.jpg" alt="capture of the antro website">
+          </picture>
+          <p>A desktop app for keep track of a fever process. Built with Python and Qt.</p>
+          <div class="card-buttons">
+            <a class="button" href="https://www.youtube.com/watch?v=UdgvT-XeDCc" target="_blank">Take a look</a>
+            <a class="button" href="https://github.com/joan-kii/fever-tracker-gui" target="_blank">Source code</a>
+          </div>
         </div>
       </div>
     </section>
     <h3 id="technologies">Technologies I've learnt something about</h3>
     <section class="technologies">
+      <div class="projects-text">
+        <p>  
+          Most of my focus has been on web development, and I've been working in dynamic and engaging web applications following the course of <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> on the JavaScript path.
+        </p> 
+        <p>
+          Along the way, I've picked up other programming languages such as Python and Rust, which have given me a broader understanding of computer science and programming concepts.</br>
+          In this sense, I've done the Harvard courses <a href="https://cs50.harvard.edu/x/2023/" target="_blank">CS50x</a>, <a href="https://cs50.harvard.edu/python/2022/" target="_blank">CS50p</a> and <a href="https://cs50.harvard.edu/ai/2020/" target="_blank">CS50ai</a> and I've written some code following along some books about Python and Rust.
+        </p>
+      </div>
       <div class="tech-card">
         <svg viewBox="0 0 128 128">
           <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
