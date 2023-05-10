@@ -21,7 +21,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 a {
@@ -58,13 +58,14 @@ p {
 }
 
 .button, button {
-  padding: .5rem;
+  padding: .8rem 1.5rem;
   border: 2px solid var(--text-color);
   color: var(--text-color);
   text-align: center;
   cursor: pointer;
   background: var(--bg-color);
-  transition: all .8s ease;
+  transition: all .4s ease;
+  border-radius: 2rem;
 }
 
 .button:hover, button:hover {
@@ -74,7 +75,7 @@ p {
 }
 
 section, h2, h3 {
-  scroll-margin-top: 7rem;
+  scroll-margin-top: 6rem;
 }
 
 h2, h3 {
@@ -255,36 +256,92 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   border-radius: 1rem;
   background-color: var(--bg-color);
 }
 
 .project-card {
-  padding: .5rem .5rem;
+  padding: 2rem .5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
+.project-card:first-child {
+  border-right: 1px solid rgba(233, 240, 243, .8);
+  border-bottom: 1px solid rgba(233, 240, 243, .8);
+  border-top-left-radius: 1rem;
+}
+
+.project-card:nth-child(2) {
+  border-bottom: 1px solid rgba(233, 240, 243, .8);
+}
+
+.project-card:nth-child(3) {
+  border-left: 1px solid rgba(233, 240, 243, .8);
+  border-bottom: 1px solid rgba(233, 240, 243, .8);
+  border-top-right-radius: 1rem;
+}
+
+.project-card:nth-child(4) {
+  border-right: 1px solid rgba(233, 240, 243, .8);
+  border-bottom-left-radius: 1rem;
+}
+
+.project-card:last-child {
+  border-left: 1px solid rgba(233, 240, 243, .8);
+  border-bottom-right-radius: 1rem;
+}
+
 .project-card > p {
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 75%;
   text-align: center;
+  color: var(--text-color);
 }
 
 .card-buttons {
-  width: 50%;
+  width: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .technologies {
+  position: relative;
+  top: -20rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--text-color);
+}
+
+.technologies h3, p {
+  color: var(--bg-color);
+}
+
+.technologies a {
+  color: var(--link-color);
+}
+
+.technologies a:not(.button)::after {
+  background-color: var(--link-color);
+}
+
+.tech-cards {
   width: 75%;
-  margin: 5rem auto;
+  margin-top: 2rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
 }
 
 .tech-card {
@@ -294,6 +351,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.tech-card p {
+  color: var(--text-color);
 }
 
 .contact {
