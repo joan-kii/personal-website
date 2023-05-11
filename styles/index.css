@@ -54,7 +54,6 @@ p {
   font-weight: 300;
   text-align: center;
   line-height: 1.8rem;
-  color: var(--bg-color);
 }
 
 .button, button {
@@ -81,7 +80,6 @@ section, h2, h3 {
 h2, h3 {
   font-size: 1.5rem;
   text-align: center;
-  color: var(--bg-color);
 }
 
 svg {
@@ -90,7 +88,10 @@ svg {
 }
 
 footer {
+  height: 6rem;
   text-align: center;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .topbar {
@@ -169,16 +170,16 @@ footer {
 }
 
 .intro-1 {
-  border-right: 2px solid var(--bg-color);
+  border-right: 2px solid transparent;
   animation: animated-text-1 3s steps(30, end) 1s 1 normal both,
     animated-cursor 900ms steps(30, end) 5;
 }
 
 .intro-2 {
-  border-right: 2px solid var(--bg-color);
+  border-right: 2px solid transparent;
   animation: animated-text-2 3s steps(30, end) 1s 1 normal both,
-    animated-cursor 900ms steps(30, end) infinite;
-  -webkit-animation-delay: 6s;
+    animated-cursor 900ms steps(30, end) 6;
+  -webkit-animation-delay: 8s;
   animation-delay: 4.5s;
 }
 
@@ -229,11 +230,12 @@ footer {
   height: 30rem;
   padding: 2rem;
   background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .about-text {
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .about-text a {
@@ -246,8 +248,7 @@ footer {
 }
 
 .projects {
-  position: relative;
-  top: -20rem;
+  margin-top: -20rem;
   padding: 5rem;
   z-index: 1;
 }
@@ -310,7 +311,6 @@ footer {
 
 .technologies {
   position: relative;
-  top: -20rem;
   margin: 1rem auto;
   padding: 2rem;
   display: flex;
@@ -320,8 +320,15 @@ footer {
   background-color: var(--text-color);
 }
 
-.technologies h3, p {
+.technologies > h3, .technologies-text > p {
+  width: 50%;
   color: var(--bg-color);
+}
+
+.technologies-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .technologies a {
@@ -330,6 +337,7 @@ footer {
 
 .technologies a:not(.button)::after {
   background-color: var(--link-color);
+  bottom: 0;
 }
 
 .tech-cards {
@@ -353,15 +361,19 @@ footer {
   align-items: center;
 }
 
-.tech-card p {
+.tech-card > p {
+  color: var(--text-color);
+}
+
+.contact-section {
+  margin: 4rem auto;
   color: var(--text-color);
 }
 
 .contact {
-  margin: 4rem auto;
+  margin: 5rem 0;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .personal {
@@ -375,11 +387,14 @@ footer {
 .personal-data {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .clipboard {
   display: flex;
   justify-content: end;
+  align-items: center;
+  color: var(--text-color);
 }
 
 .tooltip {
@@ -412,6 +427,10 @@ footer {
   margin: 4rem 0 2rem;
   display: flex;
   justify-content: space-around;
+}
+
+.personal-btns a::after {
+  background-color: var(--text-color);
 }
 
 .location {
