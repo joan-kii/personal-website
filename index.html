@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -18,7 +18,7 @@
     <div class="topbar">
       <a href="#top">
         <div class="logo">
-          <img src="./assets/logo.png" alt="logo" />
+          <img src="./assets/logo.svg" alt="logo" />
           <div class="name">
             <span>JOAN</span>
             <span>SERRANO</span>
@@ -26,7 +26,7 @@
         </div>
       </a>
       <div class="toggle-menu">
-        <svg id="menu" class="menu" xmlns="http://www.w3.org/2000/svg" fill="#f8f9fa" viewBox="0 96 960 960" style="cursor: pointer"><path d="M107.609 834.913v-83.174h745.217v83.174H107.609Zm0-217.261v-83.174h745.217v83.174H107.609Zm0-217.391v-83.74h745.217v83.74H107.609Z"/></svg>
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="#f8f9fa" viewBox="0 96 960 960" style="cursor: pointer"><path d="M107.609 834.913v-83.174h745.217v83.174H107.609Zm0-217.261v-83.174h745.217v83.174H107.609Zm0-217.391v-83.74h745.217v83.74H107.609Z"/></svg>
         <svg id="close" class="close" xmlns="http://www.w3.org/2000/svg" fill="#f8f9fa" viewBox="0 96 960 960" style="cursor: pointer"><path d="m248.13 866.087-57.782-58.217L422.217 576 190.348 344.261l57.782-58.783 232.305 231.739L711.87 285.478l57.782 58.783L538.783 576l230.869 231.87-57.782 58.217-231.435-231.739L248.13 866.087Z"/></svg>
       </div> 
       <div id="dropdown" class="menu-dropdown">
@@ -41,12 +41,19 @@
     <section class="introduce">
       <div class="photo">
         <picture>
-          <img srcset="./assets/me.svg" alt="avatar" class="me">
+          <img srcset="./assets/me.svg" alt="avatar">
         </picture>
       </div>
       <div class="type">
         <h1 class="intro-1">Hi! I'm Joan Serrano,</h1>
         <h1 class="intro-2">an aspiring software developer.</h1>
+      </div>
+      <div>
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L15 16 L30 0"></path>
+          <path class="a2" d="M0 20 L15 36 L30 20"></path>
+          <path class="a3" d="M0 40 L15 56 L30 40"></path>
+        </svg>
       </div>
     </section>
     <section class="about">
@@ -64,9 +71,9 @@
       <div class="projects-grid">
         <div class="project-card">
           <picture>
-            <img srcset="./assets/cms.svg" alt="cms logo">
+            <img srcset="./assets/cms.svg" alt="cms icon">
           </picture>
-          <p>A simple CMS project for a fake blog. Built with NextJS, React amd Sass.</p>
+          <p>A simple CMS for a fake blog. Built with NextJS, React and Sass.</p>
           <div class="card-buttons">
             <a class="button" href="https://blog-client-joan-kii.vercel.app/" target="_blank">Take a look</a>
             <a class="button" href="https://github.com/joan-kii/blog-client" target="_blank">Source code</a>
@@ -74,7 +81,7 @@
         </div>
         <div class="project-card">
           <picture>
-            <img srcset="./assets/chrome-extension.svg" alt="chrome extension logo">
+            <img srcset="./assets/chrome-extension.svg" alt="chrome extension icon">
           </picture>
           <p>A Chrome extension to find the external links in a web page.</p>
           <div class="card-buttons">
@@ -84,7 +91,7 @@
         </div>
         <div class="project-card">
           <picture>
-            <img srcset="./assets/birdity.svg" alt="birdity logo">
+            <img srcset="./assets/birdity.svg" alt="birdity icon">
           </picture>
           <p>A fake social network for bird lovers. Created with React, Firebase and MaterialUI.</p>
           <div class="card-buttons">
@@ -94,7 +101,7 @@
         </div>
         <div class="project-card">
           <picture>
-            <img srcset="./assets/guitart.svg" alt="e-commerce logo">
+            <img srcset="./assets/guitart.svg" alt="e-commerce icon">
           </picture>
           <p>A fake e-commerce. Built with React, Bootstrap and Styled Components.</p>
           <div class="card-buttons">
@@ -104,9 +111,9 @@
         </div>
         <div class="project-card">
           <picture>
-            <img srcset="./assets/guitar-notes.svg" alt="school logo">
+            <img srcset="./assets/guitar-notes.svg" alt="school icon">
           </picture>
-          <p>A web app for learning the notes on the guitar. Created with React, MaterialUI and Firebase.</p>
+          <p>A web app for learning the notes on the guitar fretboard. Created with React, MaterialUI and Firebase.</p>
           <div class="card-buttons">
             <a class="button" href="https://joan-kii.github.io/finding-guitar-notes/" target="_blank">Take a look</a>
             <a class="button" href="https://github.com/joan-kii/finding-guitar-notes" target="_blank">Source code</a>
@@ -114,7 +121,7 @@
         </div>
         <div class="project-card">
           <picture>
-            <img srcset="./assets/fever-tracker.svg" alt="fever logo">
+            <img srcset="./assets/fever-tracker.svg" alt="fever tracker icon">
           </picture>
           <p>A desktop app for keep track of a fever process. Built with Python and Qt.</p>
           <div class="card-buttons">

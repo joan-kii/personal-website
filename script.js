@@ -22,7 +22,7 @@ closeButton.addEventListener('click', () => {
 })
 
 
-// Copy email to clipboard
+// Copy mobile and email to clipboard
 const tel = document.getElementById('copy-tel');
 const email = document.getElementById('copy-email');
 const telTooltip = document.getElementById('tel-tooltip');
@@ -35,7 +35,7 @@ tel.addEventListener('click', async () => {
   } catch (err) {
     console.log(err);
   }
-});
+})
 
 tel.addEventListener('mouseout', () => {
   telTooltip.textContent = 'Copy';
@@ -48,7 +48,7 @@ email.addEventListener('click', async () => {
   } catch (err) {
     console.log(err);
   }
-});
+})
 
 email.addEventListener('mouseout', () => {
   emailTooltip.textContent = 'Copy';

@@ -7,16 +7,30 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: .8rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: .2rem solid var(--secondary-color);
+  background: var(--bg-color);
+}
+
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
 }
-/* Retirar */
-/* div, section {
-  border: 1px solid red;
-} */
 
 header {
   position: sticky;
@@ -24,6 +38,7 @@ header {
   z-index: 10;
   background-image: url(/assets/topbar-background.svg);
   background-size: cover;
+  background-position: bottom;
 }
 
 a {
@@ -95,7 +110,9 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--text-color);
+  background-image: url(/assets/footer-background.svg);
+  background-size: cover;
+  background-position: bottom;
   color: var(--bg-color);
 }
 
@@ -114,7 +131,7 @@ footer {
   opacity: 1;
 }
 
-.logo img {
+.logo > img {
   margin-right: .4rem;
   width: 3rem;
 } 
@@ -223,7 +240,6 @@ footer {
   }
 }
 
-
 @keyframes animated-text-1 {
   from {
     width: 0;
@@ -242,26 +258,51 @@ footer {
   }
 }
 
+.arrows {
+  height: 5rem;
+  position: absolute;
+  bottom: 3rem;
+}
+
+.arrows > path {
+  stroke: var(--text-color);
+  stroke-width: .1rem;  
+  fill: transparent;
+  animation: 3s arrow 2s infinite;
+  opacity: 0;
+}
+
+@keyframes arrow {
+  0% { opacity: 0 }
+  40% { opacity: 1 }
+  80% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+.arrows path.a1 {
+  animation-delay: 8s;
+}
+
+.arrows path.a2 {
+  animation-delay: 8.5s;
+}
+
+.arrows path.a3 { 
+  animation-delay: 9s;
+}
+
 .about {
   height: 30rem;
   padding: 2rem;
-  background-image: url(/assets/topbar-background.svg);
+  background-image: url(/assets/about-background.svg);
   background-size: cover;
+  background-position: bottom;
   color: var(--bg-color);
 }
 
 .about-text {
   margin: 0 auto;
   width: 50%;
-}
-
-.about-text a {
-  color: var(--link-color);
-}
-
-.about a::after {
-  background-color: var(--link-color);
-  bottom: 0;
 }
 
 .projects {
@@ -371,7 +412,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--text-color);
+  background-image: url(/assets/tech-background.svg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .technologies > h3, .technologies-text > p {
@@ -487,6 +530,7 @@ footer {
   background-color: var(--text-color);
 }
 
-.location {
-  text-align: center;
+.location > picture > img {
+  box-shadow: 0 0 15px 5px #E6ECF8;
+  border-radius: 1rem;
 }
