@@ -32,6 +32,10 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+div, section {
+  border: 1px solid red;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -158,9 +162,19 @@ footer {
   position: absolute;
   top: 4.3rem;
   right: 0;
-  width: 25%;
+  width: 50%;
   display: none;
-  justify-content: space-around;
+  justify-content:end;
+}
+
+.menu-dropdown > a {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .toggle-menu, .menu-dropdown {
+     display: none !important;
+  }
 }
 
 .introduce {
@@ -175,12 +189,10 @@ footer {
 }
 
 .photo {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   align-items: center;
-  background-image: url(/assets/me-background.svg);
-  background-size: cover;
 }
 
 .photo > picture {
@@ -259,9 +271,9 @@ footer {
 }
 
 .arrows {
+  margin-top: 3rem;
   height: 5rem;
-  position: absolute;
-  bottom: 3rem;
+  position: relative;
 }
 
 .arrows > path {
@@ -313,7 +325,7 @@ footer {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
   grid-template-rows: 1fr 1fr;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   border-radius: 1rem;
@@ -364,31 +376,6 @@ footer {
   height: 10rem;
   display: flex;
   justify-content: center;
-  background-size: cover;
-}
-
-.project-card:first-child > picture {
-  background-image: url(/assets/cms-background.svg);
-}
-
-.project-card:nth-child(2) > picture {
-  background-image: url(/assets/chrome-extension-background.svg);
-}
-
-.project-card:nth-child(3) > picture {
-  background-image: url(/assets/birdity-background.svg);
-}
-
-.project-card:nth-child(4) > picture {
-  background-image: url(/assets/guitart-background.svg);
-}
-
-.project-card:nth-child(5) > picture {
-  background-image: url(/assets/guitar-notes-background.svg);
-}
-
-.project-card:last-child > picture {
-  background-image: url(/assets/fever-tracker-background.svg);
 }
 
 .project-card > p {

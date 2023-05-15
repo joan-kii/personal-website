@@ -294,7 +294,9 @@
         </div>
         <div class="location">
           <picture>
-            <source alt="map" srcset="./assets/map.png">
+            <source media="(min-width: 1000px)" alt="map" srcset="./assets/map.png">
+            <source media="(min-width: 300px)" alt="map" srcset="./assets/map_cr_m.jpg">
+            <source media="(max-width: 299px)" alt="map" srcset="./assets/map_cr_s.jpg">
             <img src="./assets/map.png" alt="map">
           </picture>
         </div>
