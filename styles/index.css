@@ -40,10 +40,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 6.25rem;
-  background-image: url(/assets/topbar-background.svg);
-  background-size: cover;
-  background-position: bottom;
 }
 
 a {
@@ -125,6 +121,8 @@ footer {
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  background-image: url(/assets/topbar-background.svg);
+  background-size: cover;
 }
 
 .logo {
@@ -222,6 +220,7 @@ footer {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.8rem;
+  text-align: center;
 }
 
 .intro-1 {
@@ -266,8 +265,9 @@ footer {
 }
 
 .arrows {
-  margin-top: 3rem;
+  margin-top: 5rem;
   height: 5rem;
+  width: 2rem;
   position: relative;
 }
 
@@ -303,7 +303,6 @@ footer {
   padding: 2rem;
   background-image: url(/assets/about-background.svg);
   background-size: cover;
-  background-position: bottom;
   color: var(--bg-color);
 }
 
@@ -555,6 +554,26 @@ footer {
   .project-card {
     padding: 1rem .2rem;
   }
+
+  .contact {
+    margin: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal {
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+  
+  .personal > a {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .personal-btns {
+    margin: .5rem 1rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -590,5 +609,17 @@ footer {
 @media screen and (max-width: 700px) {
   .toggle-menu, .menu-dropdown {
      display: none !important;
+  }
+
+  .intro-1, .intro-2 {
+    font-size: 1.5rem;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+  }
+
+  .card-buttons > a {
+    margin-bottom: 1rem;
   }
 }
