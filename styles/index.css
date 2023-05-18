@@ -32,9 +32,9 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* div, section {
+div, section {
   border: 1px solid red;
-} */
+}
 
 header {
   position: sticky;
@@ -113,7 +113,6 @@ footer {
   text-align: center;
   background-image: url(/assets/footer-background.svg);
   background-size: cover;
-  background-position: bottom;
   color: var(--bg-color);
 }
 
@@ -207,6 +206,7 @@ footer {
 }
 
 .type {
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,9 +214,10 @@ footer {
 
 .intro-1,
 .intro-2 {
+  margin: .2rem 0;
+  width: auto;
   white-space: nowrap;
   overflow: hidden;
-  margin: .2rem 0;
   font-size: 2rem;
   font-weight: bold;
   line-height: 2.8rem;
@@ -312,7 +313,7 @@ footer {
 }
 
 .projects {
-  margin-top: -20rem;
+  margin-top: -15rem;
   padding: 5rem;
   z-index: 1;
 }
@@ -400,11 +401,10 @@ footer {
   justify-content: space-around;
   background-image: url(/assets/tech-background.svg);
   background-size: cover;
-  background-position: bottom;
 }
 
 .technologies > h3, .technologies-text > p {
-  width: 45%;
+  width: 50%;
   color: var(--bg-color);
 }
 
@@ -436,7 +436,7 @@ footer {
 }
 
 .tech-card {
-  margin-right: 2rem;
+  padding: 0 2rem;
   width: 5rem;
   display: flex;
   flex-direction: column;
@@ -577,6 +577,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .about-text, .technologies-text > p {
+    width: 75%;
+  }
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -615,7 +618,12 @@ footer {
     font-size: 1.5rem;
   }
 
+  .projects {
+    margin-top: -10rem;
+  }
+
   .card-buttons {
+    width: 40%;
     flex-direction: column;
   }
 
