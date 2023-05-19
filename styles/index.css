@@ -580,6 +580,7 @@ footer {
   .about-text, .technologies-text > p {
     width: 75%;
   }
+
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -616,10 +617,29 @@ footer {
 
   .intro-1, .intro-2 {
     font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @keyframes animated-text-1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15rem;
+    }
+  }
+  
+  @keyframes animated-text-2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 22rem;
+    }
   }
 
   .projects {
-    margin-top: -10rem;
+    margin-top: -12rem;
   }
 
   .card-buttons {
@@ -629,5 +649,82 @@ footer {
 
   .card-buttons > a {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-text, .technologies-text > p {
+    width: 85%;
+  }
+
+  .projects {
+    margin-top: -10rem;
+  }
+
+  .project-card > p {
+    width: 100%;
+  }
+
+  .tech-cards {
+    width: auto;
+  }
+  
+  .personal {
+    width: 75%;
+  }
+
+  .tooltip > span {
+    margin-top: -4rem;
+    margin-left: -4rem; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .photo, .type {
+    margin-top: 2rem;
+  }
+
+  .intro-1, .intro-2 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  @keyframes animated-text-1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12rem;
+    }
+  }
+  
+  @keyframes animated-text-2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17.5rem;
+    }
+  }
+
+  .about-text, .technologies-text > p {
+    width: 100%;
+  }
+
+  .technologies > h3 {
+    width: 85%;
+  }
+
+  .projects {
+    margin-top: -6rem;
+    padding: 1rem 2rem;
+  }
+
+  .contact-section {
+    margin-bottom: 2rem;
+  }
+
+  .personal {
+    width: 100%;
   }
 }
