@@ -32,10 +32,6 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-div, section {
-  border: 1px solid red;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -261,15 +257,37 @@ footer {
     width: 0;
   }
   to {
-    width: 29rem;
+    width: 29.2rem;
+  }
+}
+
+@-moz-document url-prefix() {
+  @keyframes animated-text-1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20.5rem;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  @keyframes animated-text-2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30.5rem;
+    }
   }
 }
 
 .arrows {
-  margin-top: 5rem;
   height: 5rem;
   width: 2rem;
-  position: relative;
+  position: absolute;
+  bottom: .3rem;
 }
 
 .arrows > path {
@@ -577,6 +595,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .introduce {
+    height: 90vh;
+  }
+
   .about-text, .technologies-text > p {
     width: 75%;
   }
@@ -657,12 +679,21 @@ footer {
     width: 85%;
   }
 
+  .arrows {
+    margin-top: 2rem;
+  }
+
   .projects {
-    margin-top: -10rem;
+    margin-top: 0;
+    padding: 1rem 2rem;
+  }
+  
+  .projects-grid {
+    box-shadow: 0 10px 10px 10px rgba(233, 240, 243, .5), 0 0 0 1px #E6ECF8;
   }
 
   .project-card > p {
-    width: 100%;
+    width: 90%;
   }
 
   .tech-cards {
@@ -680,8 +711,12 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+  .photo {
+    width: auto;
+  }
+
   .photo, .type {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .intro-1, .intro-2 {
@@ -707,24 +742,57 @@ footer {
     }
   }
 
+  .about {
+    height: auto;
+  }
+
   .about-text, .technologies-text > p {
     width: 100%;
+    font-size: 1rem;
+  }
+  
+  .about-text > p {
+    font-size: 1rem;
+  }
+
+  .project-card > p {
+    font-size: 1rem;
   }
 
   .technologies > h3 {
     width: 85%;
+    font-size: 1.2rem;
   }
 
-  .projects {
-    margin-top: -6rem;
-    padding: 1rem 2rem;
+  .tech-cards {
+    width: 100%;
+  }
+
+  .tech-card {
+    padding: 0 1rem;
+  }
+
+  .card-buttons {
+    width: 60%;
   }
 
   .contact-section {
-    margin-bottom: 2rem;
+    margin: 2rem auto;
   }
 
   .personal {
     width: 100%;
+  }
+
+  .clipboard > p {
+    font-size: 1rem;
+  }
+
+  .tooltip > span {
+    margin-left: -5rem; 
+  }
+
+  footer > p {
+    font-size: 1rem;
   }
 }
